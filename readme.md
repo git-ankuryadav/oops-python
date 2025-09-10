@@ -67,6 +67,13 @@ Two subclasses, `Developer` and `Manager`, extend `Employee` to model specialize
 
 ## Example Usage:
 
+```
+emp1 = Employee(“main”, “yadav”) print(emp1)                 # main yadav, pay: 30000 print(emp1.email)           # main.yadav@company.in emp1.applyRaise() print(emp1.pay)             # 32400 (after raise)
+dev1 = Developer(“Chinu”, “Bobas”, 70000, “Rust”) print(dev1)                 # Chinu Bobas, pay: 70000, Language: Rust
+mgr1 = Manager(“Tinnu”, “Ram”, 69000, dev1, emp1) print(mgr1)                 # Tinnu Ram, pay: 69000, Employees managed: Chinu Bobas, pay: 70000main yadav, pay: 32400 mgr1.removeEmp(emp1) print(mgr1)                 # Tinnu Ram, pay: 69000, Employees managed: Chinu Bobas, pay: 70000
+
+```
+
 ---
 
 ## Conclusion
